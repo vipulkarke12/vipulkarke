@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipul Karke | DevOps & Cloud Engineer</title>
+    <meta name="description"
+        content="Portfolio of Vipul Karke, a DevOps and Cloud Engineer specializing in AWS, Kubernetes, and CI/CD.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 3D Background -->
+    <div id="canvas-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Vipul Karke<span>.</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fixed Left Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://github.com/vipulkarke12/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vipulkarke/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:contact@vipulkarke.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content centered">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name gradient-text">Vipul Karke</h1>
+                <h2 class="hero-title">I am a <span class="typing-text"></span></h2>
+                <p class="hero-description">
+                    Passionate DevOps & Cloud Engineer converting complex problems into scalable solutions.
+                    Specializing in AWS, Kubernetes, and CI/CD automation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-outline">View Work</a>
+                    <a href="resume/resume.pdf" target="_blank" class="btn btn-outline">Download CV <i
+                            class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section section-about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+
+            <div class="about-content-wrapper">
+                <!-- Left: About Text -->
+                <div class="about-text">
+                    <p class="about-intro">Passionate about building <span class="highlight-text">innovative
+                            solutions</span> at the intersection of <span class="highlight-text">cloud computing</span>,
+                        <span class="highlight-text">full-stack development</span>, and emerging technologies.
+                    </p>
+
+                    <p>Hi! I'm <strong>Vipul Karke</strong>, a dedicated <span class="highlight-text">DevOps and Cloud
+                            Engineer</span> with a strong foundation in cloud infrastructure. My journey involves
+                        mastering powerful tools like:</p>
+
+                    <div class="tech-highlights">
+                        <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-badge"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tech-badge"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        <span class="tech-badge"><i class="fab fa-jenkins"></i> Jenkins</span>
+                    </div>
+
+                    <p>I enjoy solving <span class="highlight-text">infrastructure challenges</span> and optimizing
+                        <span class="highlight-text">deployment pipelines</span>. With hands-on experience in full-stack
+                        development and automation, I'm passionate about leveraging technology to solve real-world
+                        problems.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <strong>3+</strong>
+                                <span>Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <strong>10+</strong>
+                                <span>Projects Delivered</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>I believe in <span class="highlight-text">continuous learning</span> and staying updated with the
+                        latest industry trends to deliver cutting-edge solutions that make a <strong>real
+                            difference</strong>.</p>
+                </div>
+
+                <!-- Right: Education -->
+                <div class="education-section">
+                    <h3 class="education-title">Education</h3>
+
+                    <div class="education-item">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-content">
+                            <h4>Postgraduate Certificate in Cyber Security</h4>
+                            <p class="edu-institution">Durham College</p>
+                            <p class="edu-details">
+                                <i class="fas fa-calendar-alt"></i> Jan 2025 – Aug 2025<br>
+                                <i class="fas fa-map-marker-alt"></i> Oshawa, ON, Canada
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-content">
+                            <h4>Postgraduate Certificate in Cloud Computing</h4>
+                            <p class="edu-institution">Durham College</p>
+                            <p class="edu-details">
+                                <i class="fas fa-calendar-alt"></i> May 2024 – Dec 2024<br>
+                                <i class="fas fa-map-marker-alt"></i> Oshawa, ON, Canada
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-content">
+                            <h4>Master of Computer Applications (MCA)</h4>
+                            <p class="edu-institution">Veermata Jijabai Technological Institute (VJTI)</p>
+                            <p class="edu-details">
+                                <i class="fas fa-calendar-alt"></i> Jan 2020 – Aug 2022<br>
+                                <i class="fas fa-map-marker-alt"></i> Mumbai, India
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Banner -->
+    <section class="professional-banner">
+        <div class="container">
+            <h2 class="banner-title">Building the future<br><span class="banner-highlight">one deployment at a
+                    time</span></h2>
+            <p class="banner-subtitle">3+ years of transforming infrastructure and enabling teams to ship better
+                software faster.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <!-- Experience Card 1 -->
+                <div class="experience-card">
+                    <h3 class="exp-title">Full Stack Software Developer</h3>
+                    <p class="exp-company"><i class="fas fa-building"></i> Aurionpro Solutions Ltd.</p>
+                    <div class="exp-meta">
+                        <span class="exp-date"><i class="far fa-calendar"></i> Jan 2022 - Apr 2024</span>
+                        <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Navi Mumbai, India</span>
+                    </div>
+                    <p class="exp-description">Worked on enterprise CI/CD pipelines and DevOps automation for
+                        mission-critical banking applications, optimizing deployment workflows and system performance.
+                    </p>
+                    <ul class="exp-achievements">
+                        <li>Deployed CI/CD pipelines using Jenkins and GitHub Actions, reducing release time by 70%</li>
+                        <li>Integrated DevOps toolchain (SonarQube, Prometheus/Grafana, Trivy), reducing production
+                            defects by 30%</li>
+                        <li>Developed REST APIs with Spring Boot processing 10,000+ daily transactions with Redis
+                            caching</li>
+                        <li>Optimized Oracle SQL queries and Hibernate connection pooling, boosting transaction speed by
+                            20%</li>
+                        <li>Delivered remittance modules and CCIL integration, ensuring RBI compliance for cross-border
+                            transactions</li>
+                    </ul>
+                    <div class="exp-tech-tags">
+                        <span class="exp-tag">Jenkins</span>
+                        <span class="exp-tag">Docker</span>
+                        <span class="exp-tag">AWS</span>
+                        <span class="exp-tag">Spring Boot</span>
+                        <span class="exp-tag">Java</span>
+                        <span class="exp-tag">Redis</span>
+                        <span class="exp-tag">Maven</span>
+                        <span class="exp-tag">SonarQube</span>
+                        <span class="exp-tag">Prometheus</span>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="experience-card">
+                    <h3 class="exp-title">Web Developer</h3>
+                    <p class="exp-company"><i class="fas fa-building"></i> MVP Alumni (MAEWA)</p>
+                    <div class="exp-meta">
+                        <span class="exp-date"><i class="far fa-calendar"></i> Feb 2019 - Oct 2019</span>
+                        <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Remote / Mumbai</span>
+                    </div>
+                    <p class="exp-description">Developed and maintained full-stack web applications with focus on
+                        performance optimization and responsive design for cross-device compatibility.</p>
+                    <ul class="exp-achievements">
+                        <li>Built responsive web interfaces using HTML5, CSS3, JavaScript, and Bootstrap</li>
+                        <li>Optimized website performance, reducing page load time by 45% and improving engagement by
+                            25%</li>
+                    </ul>
+                    <div class="exp-tech-tags">
+                        <span class="exp-tag">HTML5</span>
+                        <span class="exp-tag">CSS3</span>
+                        <span class="exp-tag">JavaScript</span>
+                        <span class="exp-tag">Bootstrap</span>
+                        <span class="exp-tag">PHP</span>
+                        <span class="exp-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-icon"><i class="fas fa-blog"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Serverless Blog Application</h3>
+                        <p>Full-stack blogging application with automated CI/CD pipeline deployed on AWS EKS using
+                            Jenkins and Docker.</p>
+                        <div class="tech-tags">
+                            <span>Spring Boot</span><span>Jenkins</span><span>Docker</span><span>AWS
+                                EKS</span><span>Kubernetes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vipulkarke12/FullStack-Blogging-App" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-icon"><i class="fas fa-server"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ansible VM Monitor</h3>
+                        <p>Automated infrastructure monitoring solution using Ansible for managing and monitoring
+                            virtual machines.</p>
+                        <div class="tech-tags">
+                            <span>Ansible</span><span>VM Management</span><span>Monitoring</span><span>Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vipulkarke12/Ansible-VM-Monitor" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FoodFetch</h3>
+                        <p>Full-stack food delivery platform with JWT authentication, Angular frontend, and
+                            containerized Spring Boot backend.</p>
+                        <div class="tech-tags">
+                            <span>Java</span><span>Spring Boot</span><span>JWT</span><span>Angular</span><span>REST
+                                API</span><span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vipulkarke/Delivery-Model---Backend" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="skills-subtitle">A refined selection of my proficiency in modern development tools and
+                technologies</p>
+
+            <div class="tech-icons-grid">
+                <div class="tech-icon-item">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-dharmachakra"></i>
+                    <span>Kubernetes</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-jenkins"></i>
+                    <span>Jenkins</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-angular"></i>
+                    <span>Angular</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-leaf"></i>
+                    <span>Spring Boot</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-gitlab"></i>
+                    <span>GitLab</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-database brand-oracle"></i>
+                    <span>Oracle SQL</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-database brand-postgres"></i>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-database brand-mysql"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-database brand-mongo"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-cubes brand-redis"></i>
+                    <span>Redis</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-code-branch brand-terraform"></i>
+                    <span>Terraform</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-cogs brand-ansible"></i>
+                    <span>Ansible</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-chart-line brand-prometheus"></i>
+                    <span>Prometheus</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-chart-area brand-grafana"></i>
+                    <span>Grafana</span>
+                </div>
+                <div class="tech-icon-item">
+                    <i class="fas fa-shield-alt brand-sonarqube"></i>
+                    <span>SonarQube</span>
+                </div>
+            </div>
+
+            <p class="skills-footer">Constantly refining and expanding my technical skillset</p>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-certifications">
+        <div class="container">
+            <h2 class="section-title">Licenses & Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-docker"></i></div>
+                    <h3>Docker Foundations Professional Certificate</h3>
+                    <p>Docker, Inc</p>
+                    <span class="cert-date">Issued Nov 2025</span>
+                    <p class="cert-skills">Containerization and Docker Products</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h3>AWS Certified Solutions Architect - Associate 003</h3>
+                    <p>Amazon Web Services (AWS)</p>
+                    <span class="cert-date">Issued Jun 2025 · Expires Jun 2028</span>
+                    <p class="cert-skills">Solution Architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section section-hobbies">
+        <div class="container">
+            <h2 class="section-title">My Hobbies</h2>
+
+            <div class="hobbies-carousel-container">
+                <div class="hobbies-carousel">
+                    <!-- Photography Link Card -->
+                    <div class="flex justify-center w-full">
+                        <a href="photography.html"
+                            class="group relative w-full max-w-3xl h-96 overflow-hidden rounded-2xl shadow-xl transition-transform duration-300 hover:scale-[1.02] block">
+                            <!-- Background Image Slideshow -->
+                            <div id="photo-slideshow-container" class="absolute inset-0 w-full h-full">
+                                <img src="photography/niagara falls.JPEG" alt="Photography Gallery"
+                                    class="photo-bg-slide absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-40">
+                                <img src="photography/drone shot.JPEG" alt="Photography Gallery"
+                                    class="photo-bg-slide absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 opacity-0">
+                                <img src="photography/wonderland.JPEG" alt="Photography Gallery"
+                                    class="photo-bg-slide absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 opacity-0">
+                                <img src="photography/aroura.JPEG" alt="Photography Gallery"
+                                    class="photo-bg-slide absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 opacity-0">
+                            </div>
+
+                            <!-- Overlay Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+
+                            <!-- Content -->
+                            <div
+                                class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 border-2 border-transparent group-hover:border-[var(--primary-color)] rounded-2xl transition-colors duration-300">
+                                <div
+                                    class="w-16 h-16 rounded-full bg-[var(--primary-color)] flex items-center justify-center mb-4 shadow-lg group-hover:shadow-[0_0_20px_rgba(217,70,166,0.6)] transition-shadow duration-300">
+                                    <i class="fas fa-camera text-2xl text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Photography Gallery</h3>
+                                <p class="text-gray-300 text-sm mb-4">Explore my collection of landscape, macro, and
+                                    urban shots.</p>
+                                <span
+                                    class="inline-flex items-center text-[var(--primary-color)] font-semibold group-hover:text-white transition-colors">
+                                    View Gallery <i
+                                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="contact-heading">Get In <span class="contact-highlight">Touch</span></h2>
+            <p class="contact-description">Feel free to reach out for collaborations, opportunities, or just to connect!
+            </p>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:vipulkarke.vk@gmail.com">vipulkarke.vk@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span class="contact-label">Location</span>
+                        <span>Oshawa, Canada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/vipulkarke12/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vipulkarke/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:contact@vipulkarke.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Vipul Karke. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

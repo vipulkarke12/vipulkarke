@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio | Vipul Karke</title>
+    <meta name="description" content="Photography portfolio of Vipul Karke.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <!-- Flowbite & Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d946a6',
+                        background: '#0a0a0a',
+                        surface: '#161616'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensure footer sticks to bottom if content is short */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Vipul Karke<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#hobbies" class="nav-link active">Hobbies</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-24">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4" style="color: var(--text-color);">Photography <span
+                    style="color: var(--primary-color);">Portfolio</span></h1>
+            <p class="max-w-2xl mx-auto" style="color: var(--text-light);">Capturing moments, landscapes, and details
+                through my lens. Here
+                are some of my favorite shots.</p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Photo: Niagara Falls -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/niagara falls.JPEG" alt="Niagara Falls"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Niagara Falls</h3>
+                    <p class="text-gray-300 text-sm">Nature's Power</p>
+                </div>
+            </div>
+
+            <!-- Photo: Rajasthan Mahal -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/rajasthan mahal.JPEG" alt="Rajasthan Mahal"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Rajasthan Mahal</h3>
+                    <p class="text-gray-300 text-sm">Royal Architecture</p>
+                </div>
+            </div>
+
+            <!-- Photo: Wonderland -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/wonderland.JPEG" alt="Wonderland"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Wonderland</h3>
+                    <p class="text-gray-300 text-sm">Theme Park Vibes</p>
+                </div>
+            </div>
+
+            <!-- Photo: Drone Shot -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/drone shot.JPEG" alt="Drone View"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Drone Shot</h3>
+                    <p class="text-gray-300 text-sm">Aerial Perspective</p>
+                </div>
+            </div>
+
+            <!-- Photo: Bahubali Hills -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/bahubali hills.JPEG" alt="Bahubali Hills"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Bahubali Hills</h3>
+                    <p class="text-gray-300 text-sm">Scenic Landscape</p>
+                </div>
+            </div>
+
+            <!-- Photo: Aurora -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/aroura.JPEG" alt="Aurora"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Aurora</h3>
+                    <p class="text-gray-300 text-sm">Night Sky</p>
+                </div>
+            </div>
+
+            <!-- Photo: Computer Setup -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/computer setup.JPEG" alt="Workspace"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Workspace</h3>
+                    <p class="text-gray-300 text-sm">My Setup</p>
+                </div>
+            </div>
+
+            <!-- Photo: IMG_5338 -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/IMG_5338.JPEG" alt="Photography"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Moments</h3>
+                    <p class="text-gray-300 text-sm">Captured Time</p>
+                </div>
+            </div>
+
+            <!-- Photo: IMG_3976 -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg border border-gray-800">
+                <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+                    <img src="photography/IMG_3976.JPEG" alt="Photography"
+                        class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold text-white">Details</h3>
+                    <p class="text-gray-300 text-sm">Fine Art</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="index.html#hobbies"
+                class="inline-flex items-center justify-center px-6 py-3 text-base font-medium bg-transparent border-2 border-[var(--primary-color)] rounded-full hover:bg-[var(--primary-color)] transition-colors duration-300"
+                style="color: var(--text-color);">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Hobbies
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Vipul Karke. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/vipulkarke" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/vipulkarke" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:vipulkarke.vk@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-[9999] hidden bg-black/90 flex items-center justify-center p-4">
+        <button id="lightbox-close"
+            class="absolute top-4 right-4 text-white text-4xl focus:outline-none hover:text-[var(--primary-color)] transition-colors">&times;</button>
+        <img id="lightbox-image" src="" alt="Full View"
+            class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
+    </div>
+
+    <script src="script.js?v=4"></script>
+</body>
+
+</html>
