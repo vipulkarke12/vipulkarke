@@ -45,9 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const icon = themeToggle.querySelector('i');
 
     // Check local storage
-    if (localStorage.getItem('theme') === 'dark') {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark' || !storedTheme) {
         body.classList.add('dark-mode');
         icon.classList.replace('fa-moon', 'fa-sun');
+        if (!storedTheme) {
+            localStorage.setItem('theme', 'dark');
+        }
     }
 
     themeToggle.addEventListener('click', () => {
@@ -400,4 +404,11 @@ document.addEventListener('DOMContentLoaded', () => {
             photoSlides[currentPhotoIndex].classList.add('opacity-60', 'group-hover:opacity-40');
         }, 3000); // 3 seconds
     }
+
+
+    // GitHub Calendar Initialization
+    if (typeof GitHubCalendar !== 'undefined') {
+        GitHubCalendar(".calendar", "vipulkarke12", { responsive: true, tooltips: true });
+    }
+
 });
